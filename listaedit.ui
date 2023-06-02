@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>822</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Cadastro do Gabinete</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="file_rc.qrc">
+    <normaloff>:/Icone/gabineteicon.ico</normaloff>:/Icone/gabineteicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="minimumSize">
+          <size>
+           <width>700</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1045</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(253, 193, 19);
+border-radius: 5px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Selecione um Mês</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Todos</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Janeiro</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Fevereiro</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Março</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Abril</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Maio</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Junho</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Julho</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Agosto</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Setembro</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Outubro</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Novembro</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Dezembro</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Selecione o Ano</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Todos</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2021</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2022</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_3">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Selecione a Ordem</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Qualquer</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Crescente</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Decrescente</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Pesquisar por Nome:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Digite o Nome...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="botao_pesquisar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>PESQUISAR</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="lista">
+            <property name="cursor" stdset="0">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="textElideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="verticalScrollMode">
+             <enum>QAbstractItemView::ScrollPerItem</enum>
+            </property>
+            <property name="horizontalScrollMode">
+             <enum>QAbstractItemView::ScrollPerItem</enum>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>125</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>30</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>NOME</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CPF</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>TELEFONE</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>DATA</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>BAIRRO</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>RUA</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>COMPLEMENTO</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ASSUNTO</string>
+             </property>
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="background">
+              <color>
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="foreground">
+              <brush brushstyle="NoBrush">
+               <color alpha="255">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="botao_chamaredit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Corbel</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>EDITAR</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="bottomMargin">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>© Criado por Rhian Cavalcanti</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="file_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

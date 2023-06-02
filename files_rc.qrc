@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="close-image">
+    <file>images/cil-x.png</file>
+  </qresource>
+  <qresource prefix="Icone">
+    <file>gabineteicon.ico</file>
+  </qresource>
+  <qresource prefix="logo-image">
+    <file>logo (1).jpeg</file>
+    <file>logo.jpeg</file>
+  </qresource>
+</RCC>

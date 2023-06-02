@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Cadastro do Gabinete</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="file_rc.qrc">
+    <normaloff>:/Icone/gabineteicon.ico</normaloff>:/Icone/gabineteicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="msg_erro">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>450</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_erro">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Eleitor Cadastrado com Sucesso!</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_popup">
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-image: url(:/close-image/images/cil-x.png);
+	border-radius: 5px;
+	background-position: center;
+	
+	background-color: rgb(255, 0, 4);
+}
+QPushButton:hover{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:pressed{
+	
+	background-color: rgb(165, 165, 165);
+	color: rgb(255, 255, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="minimumSize">
+          <size>
+           <width>700</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>900</width>
+           <height>700</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(253, 193, 19);
+border-radius: 5px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="4" column="0">
+           <widget class="QLineEdit" name="barra_complemento">
+            <property name="minimumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="maxLength">
+             <number>200</number>
+            </property>
+            <property name="placeholderText">
+             <string>Complemento</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLineEdit" name="barra_telefone">
+            <property name="minimumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+	background-position: center;
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="maxLength">
+             <number>11</number>
+            </property>
+            <property name="placeholderText">
+             <string>Telefone</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="barra_cpf">
+            <property name="minimumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>11</number>
+            </property>
+            <property name="placeholderText">
+             <string>CPF</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="botao_cadastro">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Corbel</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Cadastrar</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="barra_nome">
+            <property name="minimumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="maxLength">
+             <number>100</number>
+            </property>
+            <property name="placeholderText">
+             <string>Nome</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="barra_rua">
+            <property name="minimumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>278</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QLineEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QLineEdit:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>200</number>
+            </property>
+            <property name="placeholderText">
+             <string>Rua</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" rowspan="3" colspan="3">
+           <widget class="QTextEdit" name="barra_ass">
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+	color: rgb(250, 193, 18);
+	border: 2px solid rgb(45,45,45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30,30,30);
+}
+QTextEdit:hover{
+	border: 2px solid tgb(55,55,55);
+}
+QTextEditt:focus{
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="documentTitle">
+             <string/>
+            </property>
+            <property name="markdown">
+             <string/>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Assunto</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>© Criado por Rhian Cavalcanti</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="file_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

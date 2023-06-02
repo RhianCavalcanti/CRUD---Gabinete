@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Cadastro do Gabinete</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="file_rc.qrc">
+    <normaloff>:/Icone/gabineteicon.ico</normaloff>:/Icone/gabineteicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="minimumSize">
+          <size>
+           <width>778</width>
+           <height>508</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>778</width>
+           <height>508</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(253, 193, 19);
+border-radius: 5px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="4" column="0">
+           <widget class="QPushButton" name="centro">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Centro</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="mf">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Maria Farinha</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="artur1">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Artur Lundgren 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="jaguarana">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Jaguarana</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="janga">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Janga</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QPushButton" name="fragoso">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Fragoso</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="jardimm">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Jardim Maranguape</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="aurora">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Aurora</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="jardimp">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Jardim Paulista</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="m2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Maranguape 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="engenhoM">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Engenho Maranguape</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QPushButton" name="m1">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Maranguape 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="artur2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Artur Lundgren 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="jaguaribe">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Jaguaribe</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="4">
+           <widget class="QPushButton" name="outros">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Outros</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QPushButton" name="vilaT">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Vila Torres Galvão</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="QPushButton" name="tabajara">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Tabajara</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QPushButton" name="poty">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Poty</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="pauamarelo">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Pau Amarelo</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="paratibe">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Paratibe</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QPushButton" name="nossaO">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Nossa Senhora do Ó</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QPushButton" name="nossaC">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Nossa Senhora da Conceição</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="nobre">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Nobre</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="mirueira">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(250, 193, 18);
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(80,80,80);
+	border-radius: 5px;
+
+}
+
+QPushButton:hover{
+	background-color: rgb(50,50,50);
+	border: 2px solid rgb(255,255,255);
+}
+
+QPushButton:pressed{
+	color:rgb(255,255,255);
+	background-color: rgb(80,80,80);
+	border: 2px solid rgb(255,255,255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Mirueira</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 193, 19);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="file_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
